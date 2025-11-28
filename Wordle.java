@@ -123,7 +123,7 @@ public class Wordle {
                 System.out.print("Enter your guess (5-letter word): ");
                 guess = inp.readLine();
                 
-                if (guess != null && guess.length() != WORD_LENGTH) {
+                if (guess != null || guess.length() != WORD_LENGTH) {
                     System.out.println("Invalid word. Please try again.");
                 } else {
                     valid = true;
