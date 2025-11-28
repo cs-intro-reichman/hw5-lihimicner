@@ -7,7 +7,7 @@ public class Wordle {
 		In in = new In(filename);
         String[] words = new String[258];
         int count = 0;
-        while (!in.isEmpty()); {
+        while (!in.isEmpty()) {
             String x = in.readString();
             words [count] = x;
             count++;
